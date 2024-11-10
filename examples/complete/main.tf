@@ -1,15 +1,9 @@
-# AWS-VPC networking module
-
-VPC module created to learn terraform 
-
-Example usage
-
 module "vpc" {
-  source = "./modules/networking"
+  source = "./vpc-module/networking"
 
   vpc_config = {
     cidr_block = "10.0.0.0/16"
-    name       = "your_vpc"
+    name       = "vpc-networking"
   }
 
   subnet_config = {
